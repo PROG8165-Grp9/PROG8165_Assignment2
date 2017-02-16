@@ -7,45 +7,51 @@
     <title>Sign Up page</title>
     
 	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <form>
-        <div id="header">
-
-        </div>
-        <div id="container">
-            <h1 class="text-center">Sign up</h1>
-                    
-            <div class="col-sm-4 col-md-offset-4">
+        <div id="header">            
+        </div><!--End of header-->
+        
+        <div id="signUpContainer" class="center-block">
+            
+            <h1 class="text-center">Sign up page</h1>                    
+            
                 
-                <form>
+                <form action="Directory.html" method="get" target="_blank" id="signUp">
                     
                     <div class="form-group">
                         
                         <label for="formEmail">Enter your email:</label>
-                        <input type="text" id="formEmail" class="form-control">
+                        <input type="email" name ="email" class="form-control" id="formEmail" placeholder="Email">
                         
                     </div>
                     
                     <div class="form-group">
                         
-                        <label for="formName">Enter your username:</label>
-                        <input type="text" id="formName" class="form-control">
+                        <label for="formUsername">Enter your username:</label>
+                        <input type="text" name ="username" class="form-control" id="formUsername" placeholder="Username">
                         
                     </div>
                     
                     <div class="form-group">
                         
-                        <label for="formUsername">Enter your username:</label>                        
-                        <input type="text" id="formUsername" class="form-control">
+                        <label for="formPassword">Enter your password:</label>                        
+                        <input type="password" name ="password" class="form-control" id="formPassword" placeholder="Password">
                         
-                    </div>                
+                    </div>   
                     
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    
-                </form>
+                    <div class="form-group text-center">
+                        
+                       <input type="submit" class="btn btn-primary btn-lg btn-block login-button">
+                        
+                    </div>
+                        
+                     
+                </form>              
+                
           
-            </div>                     
+                               
 
             <!--
                 SAMPLE:
@@ -53,10 +59,11 @@
                 <input id="Password1" type="password" />
                 <input id="Button1" type="button" value="Log In" />
             -->
-        </div>
+        </div><!--End of container-->
+    
         <div id="footer">
-
-        </div>
-    </form>
+        </div><!--End of footer-->
+    
 </body>
+<!--<script type="text/javascript" src="SignUp_JS.js"></script>    -->
 </html>
