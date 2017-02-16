@@ -3,12 +3,18 @@
     position: center;
 }
 table{
-width: 100%;
-border-color: #ccc;
+width: 80%;
+margin: 0 auto;
+border:1px solid #ddd
+
 }
 table tr:nth-child(odd){
-background: #ccc;
+background: #ddd;
+border-width:0px 1px 1px 0px; 
+padding:10px 0px;
 }
 table tr:nth-child(even){
 background: #fff;
+border-width:0px 1px 1px 0px; 
+padding:10px 0px;
 }
