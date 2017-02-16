@@ -2,6 +2,7 @@
 {
     position: center;
 }
+<<<<<<< HEAD
 
 body
 {
@@ -58,3 +59,10 @@ transition: border .5s;
 .btn:hover {
   background-color: #2980B9;
 }
+=======
+#signUpContainer{
+    height: 50%;
+    width: 50%;
+    
+}
+>>>>>>> 1fe6537d1a96231e8a0f5cf0ae4e125fcedb2cd1
