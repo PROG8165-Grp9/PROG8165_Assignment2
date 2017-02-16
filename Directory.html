@@ -9,10 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Example of Bootstrap 3 Buttons</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <form>
@@ -21,8 +19,6 @@
         </div>
         <div id="dash_container">
             <h1>Heading 1</h1>
-            <script src="js/jquery-1.11.3.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
             <button type="button" class="btn btn-default">Default</button>
             <button type="button" class="btn btn-primary">Primary</button>
             <button type="button" class="btn btn-info">Info</button>
@@ -30,16 +26,31 @@
             <button type="button" class="btn btn-warning">Warning</button>
             <button type="button" class="btn btn-danger">Danger</button>
             <button type="button" class="btn btn-link">Link</button>
-            <!--
-                SAMPLE:
-                <input id="Text1" type="text" />
-                <input id="Password1" type="password" />
-                <input id="Button1" type="button" value="Log In" />
-            -->
+        </div>
+        <div class="container">
+          <h2>Striped Rows</h2>
+          <p>The .table-striped class adds zebra-stripes to a table:</p>       
+          <table class="table table-responsive table-hover" id="TransTable">
+            <thead>
+              <tr>
+                <th data-type="number">No.</th>
+                <th data-type="string">Description</th>
+                <th data-type="string">Location</th>
+                <th data-type="date">Date</th>
+                <th data-type="string">Type</th>
+                <th data-type="number">Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+				<tr></tr>
+            </tbody>
+          </table>
         </div>
         <div id="dash_footer">
 
         </div>
     </form>
+    <script src="Add_Transactions.js"></script>
+    <script src="Dir_JS.js"></script>
 </body>
 </html>
