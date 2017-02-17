@@ -65,5 +65,33 @@ transition: border .5s;
   background-color: #2980B9;
 }
 =======
+<<<<<<< HEAD
 
+=======
+#signUpContainer{
+    height: 50%;
+    width: 50%;
+    
+}
+#dash_container
+{
+    position: center;
+}
+table{
+width: 80%;
+margin: 0 auto;
+border:1px solid #ddd
+
+}
+table tr:nth-child(odd){
+background: #ddd;
+border-width:0px 1px 1px 0px; 
+padding:10px 0px;
+}
+table tr:nth-child(even){
+background: #fff;
+border-width:0px 1px 1px 0px; 
+padding:10px 0px;
+}
+>>>>>>> origin/develop
 >>>>>>> 1fe6537d1a96231e8a0f5cf0ae4e125fcedb2cd1
