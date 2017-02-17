@@ -10,6 +10,11 @@ font-family: sans-serif;
 background-color: ;
 padding: 50px;
 }
+#signUpContainer{
+    height: 50%;
+    width: 50%;
+    
+}
 .login {
 margin: 20px auto;
 width: 500px;
@@ -60,9 +65,5 @@ transition: border .5s;
   background-color: #2980B9;
 }
 =======
-#signUpContainer{
-    height: 50%;
-    width: 50%;
-    
-}
+
 >>>>>>> 1fe6537d1a96231e8a0f5cf0ae4e125fcedb2cd1
