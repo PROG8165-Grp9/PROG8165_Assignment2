@@ -1,20 +1,28 @@
 /*General styles*/
-body
+html, #container
 {
+background:;
 font-family: sans-serif; 
-background-color: ;
-padding: 50px;
+margin-bottom:50px;
+margin-top: 50px;
 }
 
 /*Authentication styles*/
-#login, #signUp_Container {
+#login_Container, #signUp_Container {
 height: 50%;
 width: 50%;
 background-color: lightblue;
 padding: 80px;
-border-radius: 5px
+border-radius: 50px
 }
 
+.container-table {
+    display: table;
+}
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
 #login_form {
 text-align: center;
 }
@@ -36,7 +44,7 @@ transition: border .5s;
 }
 
 .form-group input { 
-    margin-bottom: 20px;
+margin-bottom: 20px;
 text-align: center;
 background-color: #ECF0F1;
 border: 2px solid transparent;
