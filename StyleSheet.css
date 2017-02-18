@@ -1,40 +1,29 @@
-#dash_container
-{
-    position: center;
-}
-<<<<<<< HEAD
-
+/*General styles*/
 body
 {
-font-family: sans-serif;
-background-color: ;
+font-family: sans-serif; 
+background-color: black;
 padding: 50px;
 }
-#signUpContainer{
-    height: 50%;
-    width: 50%;
-    
-}
-.login {
-margin: 20px auto;
-width: 500px;
-}
 
-.login-screen-bg {
+/*Authentication styles*/
+#login, #signUp_Container {
+height: 50%;
+width: 50%;
 background-color: lightblue;
 padding: 80px;
 border-radius: 5px
 }
 
-.login-form {
+#login_form {
 text-align: center;
 }
 
-.form-login-group {
+#form_login_group {
 margin-bottom: 20px;
 }
 
-input {
+#form_login_group input {
 text-align: center;
 background-color: #ECF0F1;
 border: 2px solid transparent;
@@ -46,8 +35,19 @@ width: 250px;
 transition: border .5s;
 }
 
+.form-group input { 
+    margin-bottom: 20px;
+text-align: center;
+background-color: #ECF0F1;
+border: 2px solid transparent;
+border-radius: 3px;
+font-size: 16px;
+font-weight: 200;
+padding: 10px 0;      
+transition: border .5s;
+}
 
-.btn {
+#log_In, #register {
   border: 2px solid transparent;
   background: #9FBFF4;
   color: #ffffff;
@@ -59,20 +59,33 @@ transition: border .5s;
   display: block;
   width: 250px;
   margin: 0 auto;
+  text-decoration: none;  
 }
 
-.btn:hover {
+#register {
+    background: #45D158;
+}
+
+#log_In:hover, #register:hover, #sign_Up:hover {
   background-color: #2980B9;
 }
-=======
-<<<<<<< HEAD
 
-=======
-#signUpContainer{
-    height: 50%;
-    width: 50%;
-    
+#sign_Up {
+  border: 2px solid transparent;
+  line-height: 25px;
+  padding: 10px 0;
+  border-radius: 3px;
+  transition: 0.25s;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  background: #45D158; 
 }
+/*Dashboard styles*/
+
+/*Transaction details styles*/
 #dash_container
 {
     position: center;
@@ -93,5 +106,6 @@ background: #fff;
 border-width:0px 1px 1px 0px; 
 padding:10px 0px;
 }
+
 >>>>>>> origin/develop
 >>>>>>> 1fe6537d1a96231e8a0f5cf0ae4e125fcedb2cd1
