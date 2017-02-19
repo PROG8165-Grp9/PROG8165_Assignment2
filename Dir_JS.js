@@ -1,7 +1,4 @@
 ﻿var table = document.getElementById("TransTable");
-    
-
-
 	for (i in Trans.Transactions) {
 		//document.getElementById("TransTable")
 		//.innerHTML = document.getElementById("demo").innerHTML + Trans.Transactions[i].TransDesc + "\n";
@@ -14,8 +11,10 @@
 		var TransAmount = row.insertCell(5);
 		var link = document.createElement('a');
 		link.setAttribute('href', "TransacDetails.html?TransNo=" + Trans.Transactions[i].TransNo);
+		//link.setAttribute('href', "javascript:void(0)");
+		//link.setAttribute('onclick', "TransacDetails.html?TransNo=" + Trans.Transactions[i].TransNo);
 		TransNum.appendChild(link);
-		link.setAttribute('target', "_blank");
+		link.setAttribute('target', "TransacDetails.html");
 		link.innerHTML = Trans.Transactions[i].TransNo;
 		//TransNum.innerHTML = Trans.Transactions[i].TransNo;
 		TransDesc.innerHTML = Trans.Transactions[i].TransDesc;
@@ -24,8 +23,6 @@
 		TransType.innerHTML = Trans.Transactions[i].TransType;
 		TransAmount.innerHTML = Trans.Transactions[i].TransAmount;
 
-		
-		
 		row.id = Trans.Transactions[i].TransNo;
 		
 	}

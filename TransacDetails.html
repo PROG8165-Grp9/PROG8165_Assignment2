@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8" />
@@ -22,7 +22,7 @@
         </tr>
         <tr>
             <td id="table_Lbl"><label>Date (Month):</label></td>
-            <td><input id="tbxDate" type="date" disabled data-date-fomat="MMMM"></td>
+            <td><input id="tbxDate" type="text" disabled data-date-fomat="MMMM"></td>
         </tr>
         <tr>
         	<td id="table_Lbl"><label>Description:</label></td>
@@ -45,22 +45,6 @@
     </div>
   </form>  
   <script src="Add_Transactions.js"></script>
-    <script type="text/javascript">
-		var myParam = location.search.split('TransNo=')[1];
-		document.getElementById("tbxTrans").value = myParam;
-
-		for (i in Trans.Transactions) {
-			if(Trans.Transactions[i].TransNo == myParam)
-			{
-				//document.getElementById("tbxDate").value = Trans.Transactions[i].TransDate;
-				document.getElementById("txtaDesc").value = Trans.Transactions[i].TransDesc;
-				document.getElementById("tbxType").value = Trans.Transactions[i].TransType;
-				document.getElementById("tbxLoc").value = Trans.Transactions[i].TransLocation;
-				document.getElementById("tbxAmount").value = Trans.Transactions[i].TransAmount;
-			}
-			
-		}
-		
-	</script>
+    <script src="TransDet_JS.js"></script>
 </body>
 </html>
