@@ -1,21 +1,20 @@
 /*General styles*/
-html, #container
-{
-background:;
-font-family: sans-serif; 
-margin-bottom:50px;
-margin-top: 50px;
+html, #container {
+    background:;
+    font-family: sans-serif; 
+    margin-bottom:50px;
+    margin-top: 50px;
 }
 
 /*Authentication styles*/
 #login_Container, #signUp_Container {
-height: 50%;
-width: 50%;
-background-color: lightblue;
-padding: 80px;
-border-radius: 50px
+    height: 50%;
+    width: 50%;
+    background-color: lightblue;
+    padding: 80px;
+    border-radius: 50px;
 }
-
+/*
 .container-table {
     display: table;
 }
@@ -23,107 +22,111 @@ border-radius: 50px
     display: table-cell;
     vertical-align: middle;
 }
-#login_form {
-text-align: center;
+*/
+#login_form  {
+    text-align: center;
 }
 
-#form_login_group {
-margin-bottom: 20px;
+#form_login_group, .form-group {
+    margin-bottom: 20px;    
+}
+
+#form_login_group input , #signUp_form input, #log_In, #register, #sign_Up {
+    height: 50px;
 }
 
 #form_login_group input {
-text-align: center;
-background-color: #ECF0F1;
-border: 2px solid transparent;
-border-radius: 3px;
-font-size: 16px;
-font-weight: 200;
-padding: 10px 0;
-width: 90%;
-transition: border .5s;
+    text-align: center;
+    background-color: #ECF0F1;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 0;
+    width: 90%;    
+    transition: border .5s; 
 }
 
-.form-group input { 
-margin-bottom: 20px;
-text-align: center;
-background-color: #ECF0F1;
-border: 2px solid transparent;
-border-radius: 3px;
-font-size: 16px;
-font-weight: 200;
-padding: 10px 0;     
-width: 90%; 
-transition: border .5s;
+#signUp_form input {     
+    border: 0px solid transparent;
+    text-align: center;
+    background-color: #ECF0F1;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 20px 0;    
+    transition: border .5s;    
 }
 
-#log_In, #register {
-  border: 2px solid transparent;
-  background: #9FBFF4;
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 25px;
-  padding: 10px 0;
-  border-radius: 3px;
-  transition: 0.25s;
-  display: block;
-  width: 90%;
-  margin: 0 auto;
-  text-decoration: none;  
+#log_In {    
+    background: #9FBFF4;
 }
 
 #register {
+background: #45D158;
+}
+
+#log_In, #register {
+    border: 0px solid transparent;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 0;
+    border-radius: 3px;
+    transition: 0.25s;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    text-decoration: none;  
+}
+
+
+
+#sign_Up {
+    border: 0px solid transparent;
     background: #45D158;
+    line-height: 25px;
+    padding: 10px 0;
+    border-radius: 3px;
+    transition: 0.25s;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 20px;
 }
 
 #log_In:hover, #register:hover, #sign_Up:hover {
-  background-color: #2980B9;
+    background-color: #2980B9;
 }
 
-#sign_Up {
-  border: 2px solid transparent;
-  line-height: 25px;
-  padding: 10px 0;
-  border-radius: 3px;
-  transition: 0.25s;
-  display: block;
-  margin: 0 auto;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 16px;
-  background: #45D158; 
-}
+
 /*Dashboard styles*/
 
 /*Transaction details styles*/
-#dash_container
-{
+#dash_container {
     position: center;
 }
 
-#container_trans
-{
+#container_trans {
 	margin-left:auto; 
 	margin-right:auto;
 	width:80%;
 }
-#title
-{
+#title {
 	color: #036;
 	font-size : 25px;
 }
 
-#date
-{
+#date {
 	background:#dddddd;
 }
 
-#type
-{
+#type {
 	background:#dddddd;
 }
 
-#value
-{
+#value {
 	background:#dddddd;
 }
 
