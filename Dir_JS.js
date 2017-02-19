@@ -1,37 +1,33 @@
-﻿//var grid = document.getElementById('TransTable');
+﻿var table = document.getElementById("TransTable");
+    
 
-//grid.onclick = function(e) {
-//    if (e.target.tagName != 'TH') return;
-//    sortGrid(e.target.cellIndex, e.target.getAttribute('data-type'));
-//};
 
-//function sortGrid(colNum, type) {
-//    var tbody = grid.getElementsByTagName('tbody')[0];
-//    var rowsArray = [].slice.call(tbody.rows)
-//    var compare;
+	for (i in Trans.Transactions) {
+		//document.getElementById("TransTable")
+		//.innerHTML = document.getElementById("demo").innerHTML + Trans.Transactions[i].TransDesc + "\n";
+	    var row = table.insertRow(table.getElementsByTagName("tr").length);
+	    var TransNum = row.insertCell(0);	    
+		var TransDesc = row.insertCell(1);
+		var TransLoc = row.insertCell(2);
+		var TransDate = row.insertCell(3);
+		var TransType = row.insertCell(4);
+		var TransAmount = row.insertCell(5);
+		var link = document.createElement('a');
+		link.setAttribute('href', "TransacDetails.html?TransNo=" + Trans.Transactions[i].TransNo);
+		TransNum.appendChild(link);
+		link.setAttribute('target', "_blank");
+		link.innerHTML = Trans.Transactions[i].TransNo;
+		//TransNum.innerHTML = Trans.Transactions[i].TransNo;
+		TransDesc.innerHTML = Trans.Transactions[i].TransDesc;
+		TransLoc.innerHTML = Trans.Transactions[i].TransLocation;
+		TransDate.innerHTML = Trans.Transactions[i].TransDate;
+		TransType.innerHTML = Trans.Transactions[i].TransType;
+		TransAmount.innerHTML = Trans.Transactions[i].TransAmount;
 
-//    switch (type) {
-//        case 'number':
-//            compare = function(rowA, rowB) {
-//                return rowA.cells[colNum].innerHTML - rowB.cells[colNum].innerHTML;
-//            };
-//            break;
-//        case 'string':
-//            compare = function(rowA, rowB) {
-//                return rowA.cells[colNum].innerHTML > rowB.cells[colNum].innerHTML ? 1 : -1;
-//            };
-//            break;
-//    }
-//    rowsArray.sort(compare);
-//    grid.removeChild(tbody);
-//    for (var i = 0; i < rowsArray.length; i++) {
-//        tbody.appendChild(rowsArray[i]);
-//    }
+		
+		
+		row.id = Trans.Transactions[i].TransNo;
+		
+	}
 
-//    grid.appendChild(tbody);
-
-//}
-
-var tds = document.getElementsByTagName("tr");
-
-//for (var i in tds) tds[i].onclick = alert("Hello" + tds[i].id);
+	

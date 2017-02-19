@@ -3,18 +3,65 @@
 <head>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="StyleSheet.css">
+    <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <title></title>
 </head>
 <body>
-
-  <div id = "left" ></div>
-  <div id ="title">Trasaction</div>
-  <hr>
-  <div id ="date">Date(Month):</div>
-  <div id ="description">Description:</div>
-  <div id ="type">Transaction Type:</div>
-  <div id = "location">Location:</div>
-  <div id ="value">Value:</div>
+	
+  <!--<div id = "left" ></div>-->
   
+  <form action="" method="get" name="Transaction">
+  	<div  class="container">
+    <div id ="title">Trasaction</div>
+    <br>
+  	<table class="table table-responsive">
+    	<tr>
+        	<td id="table_Lbl"><label>Transaction Number:</label></td>
+            <td  style="width:500px;">
+            	<input id="tbxTrans" name="tbxTransNo" type="text" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td id="table_Lbl"><label>Date (Month):</label></td>
+            <td><input id="tbxDate" type="date" disabled data-date-fomat="MMMM"></td>
+        </tr>
+        <tr>
+        	<td><label>Description:</label></td>
+            <td><textarea id="txtaDesc" style="height:50px"
+            type="text" disabled></textarea></td>
+        </tr>
+        <tr>
+        	<td><label>Type:</label></td>
+            <td><input id="tbxType" type="text" disabled></td>
+        </tr>
+        <tr>
+        	<td><label>Location:</label></td>
+            <td><input id="tbxLoc" type="text" disabled></td>
+        </tr>
+        <tr>
+	        <td><label>Amount:</label></td>
+            <td><input id="tbxAmount" type="number" disabled></td>
+        </tr>
+    </table>   
+    </div>
+  </form>  
+  <script src="Add_Transactions.js"></script>
+    <script type="text/javascript">
+		var myParam = location.search.split('TransNo=')[1];
+		document.getElementById("tbxTrans").value = myParam;
+
+		for (i in Trans.Transactions) {
+			if(Trans.Transactions[i].TransNo == myParam)
+			{
+				//document.getElementById("tbxDate").value = Trans.Transactions[i].TransDate;
+				document.getElementById("txtaDesc").value = Trans.Transactions[i].TransDesc;
+				document.getElementById("tbxType").value = Trans.Transactions[i].TransType;
+				document.getElementById("tbxLoc").value = Trans.Transactions[i].TransLocation;
+				document.getElementById("tbxAmount").value = Trans.Transactions[i].TransAmount;
+			}
+			
+		}
+		
+	</script>
 </body>
 </html>

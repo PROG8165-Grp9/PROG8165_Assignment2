@@ -128,5 +128,11 @@ transition: border .5s;
 	background:#dddddd;
 }
 
+#table_Lbl
+{
+	width: 150px;
+	text-align:right;
+}
+
 >>>>>>> origin/develop
 >>>>>>> 1fe6537d1a96231e8a0f5cf0ae4e125fcedb2cd1
