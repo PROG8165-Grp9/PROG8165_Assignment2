@@ -10,7 +10,7 @@
 		var link = document.createElement('a');
 		link.setAttribute('href', "TransacDetails.html?TransNo=" + Trans.Transactions[i].TransNo);
 		TransNum.appendChild(link);
-		link.setAttribute('target', "TransacDetails.html");
+		link.setAttribute('target', "_self");
 		link.innerHTML = Trans.Transactions[i].TransNo;
 		//TransNum.innerHTML = Trans.Transactions[i].TransNo;
 		TransDesc.innerHTML = Trans.Transactions[i].TransDesc;
