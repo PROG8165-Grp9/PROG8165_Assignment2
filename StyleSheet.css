@@ -39,7 +39,7 @@ border-radius: 3px;
 font-size: 16px;
 font-weight: 200;
 padding: 10px 0;
-width: 250px;
+width: 90%;
 transition: border .5s;
 }
 
@@ -51,7 +51,8 @@ border: 2px solid transparent;
 border-radius: 3px;
 font-size: 16px;
 font-weight: 200;
-padding: 10px 0;      
+padding: 10px 0;     
+width: 90%; 
 transition: border .5s;
 }
 
@@ -65,7 +66,7 @@ transition: border .5s;
   border-radius: 3px;
   transition: 0.25s;
   display: block;
-  width: 250px;
+  width: 90%;
   margin: 0 auto;
   text-decoration: none;  
 }
@@ -98,21 +99,33 @@ transition: border .5s;
 {
     position: center;
 }
-table{
-width: 80%;
-margin: 0 auto;
-border:1px solid #ddd
 
+#left
+{
+	background:#FFF;
+	width:10%;
+	height:200px;
+	float:left;
 }
-table tr:nth-child(odd){
-background: #ddd;
-border-width:0px 1px 1px 0px; 
-padding:10px 0px;
+#title
+{
+	color: #036;
+	font-size : 25px;
 }
-table tr:nth-child(even){
-background: #fff;
-border-width:0px 1px 1px 0px; 
-padding:10px 0px;
+
+#date
+{
+	background:#dddddd;
+}
+
+#type
+{
+	background:#dddddd;
+}
+
+#value
+{
+	background:#dddddd;
 }
 
 >>>>>>> origin/develop
