@@ -100,12 +100,11 @@ transition: border .5s;
     position: center;
 }
 
-#left
+#container_trans
 {
-	background:#FFF;
-	width:10%;
-	height:200px;
-	float:left;
+	margin-left:auto; 
+	margin-right:auto;
+	width:80%;
 }
 #title
 {
