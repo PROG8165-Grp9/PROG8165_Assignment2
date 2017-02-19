@@ -1,35 +1,37 @@
-#dash_container
+/*General styles*/
+html, #container
 {
-    position: center;
-}
-<<<<<<< HEAD
-
-body
-{
-font-family: sans-serif;
-background-color: ;
-padding: 50px;
-}
-.login {
-margin: 20px auto;
-width: 500px;
+background:;
+font-family: sans-serif; 
+margin-bottom:50px;
+margin-top: 50px;
 }
 
-.login-screen-bg {
+/*Authentication styles*/
+#login_Container, #signUp_Container {
+height: 50%;
+width: 50%;
 background-color: lightblue;
 padding: 80px;
-border-radius: 5px
+border-radius: 50px
 }
 
-.login-form {
+.container-table {
+    display: table;
+}
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
+#login_form {
 text-align: center;
 }
 
-.form-login-group {
+#form_login_group {
 margin-bottom: 20px;
 }
 
-input {
+#form_login_group input {
 text-align: center;
 background-color: #ECF0F1;
 border: 2px solid transparent;
@@ -41,8 +43,19 @@ width: 250px;
 transition: border .5s;
 }
 
+.form-group input { 
+margin-bottom: 20px;
+text-align: center;
+background-color: #ECF0F1;
+border: 2px solid transparent;
+border-radius: 3px;
+font-size: 16px;
+font-weight: 200;
+padding: 10px 0;      
+transition: border .5s;
+}
 
-.btn {
+#log_In, #register {
   border: 2px solid transparent;
   background: #9FBFF4;
   color: #ffffff;
@@ -54,15 +67,53 @@ transition: border .5s;
   display: block;
   width: 250px;
   margin: 0 auto;
+  text-decoration: none;  
 }
 
-.btn:hover {
+#register {
+    background: #45D158;
+}
+
+#log_In:hover, #register:hover, #sign_Up:hover {
   background-color: #2980B9;
 }
-=======
-#signUpContainer{
-    height: 50%;
-    width: 50%;
-    
+
+#sign_Up {
+  border: 2px solid transparent;
+  line-height: 25px;
+  padding: 10px 0;
+  border-radius: 3px;
+  transition: 0.25s;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  background: #45D158; 
 }
+/*Dashboard styles*/
+
+/*Transaction details styles*/
+#dash_container
+{
+    position: center;
+}
+table{
+width: 80%;
+margin: 0 auto;
+border:1px solid #ddd
+
+}
+table tr:nth-child(odd){
+background: #ddd;
+border-width:0px 1px 1px 0px; 
+padding:10px 0px;
+}
+table tr:nth-child(even){
+background: #fff;
+border-width:0px 1px 1px 0px; 
+padding:10px 0px;
+}
+
+>>>>>>> origin/develop
 >>>>>>> 1fe6537d1a96231e8a0f5cf0ae4e125fcedb2cd1
