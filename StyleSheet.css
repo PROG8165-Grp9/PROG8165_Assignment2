@@ -44,18 +44,39 @@ html, #container {
     font-weight: 200;
     padding: 10px 0;
     width: 90%;    
-    transition: border .5s; 
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 0px solid transparent;
 }
 
 #signUp_form input {     
-    border: 0px solid transparent;
+    border: 0px;
     text-align: center;
     background-color: #ECF0F1;
     border-radius: 3px;
     font-size: 16px;
     font-weight: 200;
     padding: 20px 0;    
-    transition: border .5s;    
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 0px solid transparent;
+}
+
+#form_login_group input:focus , #signUp_form input:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1); 
+    padding: 3px 0px 3px 3px; 
+    margin: 5px 1px 3px 0px; 
+    border: 2px solid rgba(81, 203, 238, 1);
 }
 
 #log_In {    
@@ -78,8 +99,6 @@ background: #45D158;
     margin: 0 auto;
     text-decoration: none;  
 }
-
-
 
 #sign_Up {
     border: 0px solid transparent;
