@@ -149,10 +149,24 @@ background: #45D158;
 	background:#dddddd;
 }
 
-#table_Lbl
+td.table_Lbl
 {
 	width: 250px;
 	text-align:right;
+}
+
+input.table_TransNo
+{
+	width: 50px;
+}
+
+input.table_TransDetails
+{
+	width: 175px;
+}
+textarea.table_TransDesc
+{
+	width: 250px;
 }
 
 >>>>>>> origin/develop

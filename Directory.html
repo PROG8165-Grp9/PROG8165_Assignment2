@@ -13,31 +13,26 @@
 </head>
 <body>
     <form target="_self">
-        <div id="dash_header">
-
+        <div id="dash_header" class="container">
+        	<section style="display:table-cell;">
+            	<h1 style="font: mono; font-family: 'Monotype Corsiva'; font-size: 50px;">MyTrans</h1>
+            </section>
+			<aside style="display:table-cell; float:right; ">
+            	<button type="button" class="btn btn-default-header" onClick="LoadDash()">Dashboard</button>
+                <button type="button" class="btn btn-default-header">New Transaction</button>
+                <button type="button" class="btn btn-default-header" onClick="LogOut()">Log Out</button>
+            </aside>
         </div>
-        <div id="dash_container">
-            <h1>Heading 1</h1>
-            <button type="button" class="btn btn-default">Default</button>
-            <button type="button" class="btn btn-primary">Primary</button>
-            <button type="button" class="btn btn-info">Info</button>
-            <button type="button" class="btn btn-success">Success</button>
-            <button type="button" class="btn btn-warning">Warning</button>
-            <button type="button" class="btn btn-danger">Danger</button>
-            <button type="button" class="btn btn-link">Link</button>
-        </div>
+        <hr>
         <div class="container">
-          <h2>Striped Rows</h2>
-          <p>The .table-striped class adds zebra-stripes to a table:</p>       
+          <h3>Recent Transactions</h3>
           <table class="table table-responsive table-hover" id="TransTable">
             <thead>
               <tr>
                 <th data-type="number">No.</th>
-                <th data-type="string">Description</th>
-                <th data-type="string">Location</th>
-                <th data-type="date">Date</th>
+                <th data-type="date">Transaction Month</th>
                 <th data-type="string">Type</th>
-                <th data-type="number">Amount</th>
+                <th data-type="string">Location</th>
               </tr>
             </thead>
             <tbody>
@@ -51,5 +46,6 @@
     </form>
     <script src="Add_Transactions.js"></script>
     <script src="Dir_JS.js"></script>
+    <script src="HeaderScript.js"></script>
 </body>
 </html>

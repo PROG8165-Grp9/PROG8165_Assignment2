@@ -15,3 +15,7 @@ for (i in Trans.Transactions) {
     }
 
 }
+
+function goBack() {
+    window.history.back();
+}
