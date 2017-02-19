@@ -2,11 +2,11 @@
 var Trans =
     {
         "Transactions": [
-           { "TransNo": 5, "TransDesc": "Deposit", "TransLocation":"Toronto", "TransDate": "12/5/2016", "TransType": "Deposit", "TransAmount": 0.00 },
-           { "TransNo": 4, "TransDesc": "Withdrawal", "TransLocation": "Kitchener", "TransDate": "12/5/2016", "TransType": "Withdrawal", "TransAmount": 0.00 },
-           { "TransNo": 3, "TransDesc": "Deposit", "TransLocation":"Toronto", "TransDate": "12/5/2016", "TransType": "Deposit", "TransAmount": 0.00 },
-           { "TransNo": 2, "TransDesc": "Deposit", "TransLocation":"Kitchener", "TransDate": "12/5/2016", "TransType": "Deposit", "TransAmount": 0.00 },
-           { "TransNo": 1, "TransDesc": "Withdrawal", "TransLocation":"Waterloo", "TransDate": "12/5/2016", "TransType": "Withdrawal", "TransAmount": 0.00 }
+           { "TransNo": 1, "TransDesc": "TD Canada Trust: Initial Deposit", "TransLocation":"Toronto", "TransDate": "12/1/2016", "TransType": "Deposit", "TransAmount": 0.00 },
+           { "TransNo": 2, "TransDesc": "Conestoga College ATM Withdrawal", "TransLocation": "Kitchener", "TransDate": "18/4/2016", "TransType": "Withdrawal", "TransAmount": 0.00 },
+           { "TransNo": 3, "TransDesc": "TD Canada Trust: ATM Deposit", "TransLocation":"Toronto", "TransDate": "21/6/2016", "TransType": "TD Canada Trust: Pioneer Dr. Branch Deposit", "TransAmount": 0.00 },
+           { "TransNo": 4, "TransDesc": "Deposit", "TransLocation":"Kitchener", "TransDate": "12/7/2016", "TransType": "Deposit", "TransAmount": 0.00 },
+           { "TransNo": 5, "TransDesc": "Fairview Park Mall ATM Withdrawal", "TransLocation":"Waterloo", "TransDate": "10/12/2016", "TransType": "Withdrawal", "TransAmount": 0.00 }
         ]
     };
 
@@ -17,7 +17,8 @@ var Trans =
 	for (i in Trans.Transactions) {
 		//document.getElementById("TransTable")
 		//.innerHTML = document.getElementById("demo").innerHTML + Trans.Transactions[i].TransDesc + "\n";
-		var row = table.insertRow(1);
+	    var row = table.insertRow(table.getElementsByTagName("tr").length);
+	    row.id = Trans.Transactions[i].TransNo;
 		var TransNum = row.insertCell(0);
 		var TransDesc = row.insertCell(1);
 		var TransLoc = row.insertCell(2);
