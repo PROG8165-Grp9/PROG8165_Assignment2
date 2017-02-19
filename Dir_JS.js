@@ -34,4 +34,4 @@
 
 var tds = document.getElementsByTagName("tr");
 
-for (var i in tds) tds[i].onclick = alert("Hello" + tds[i].id);
+//for (var i in tds) tds[i].onclick = alert("Hello" + tds[i].id);

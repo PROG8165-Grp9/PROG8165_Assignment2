@@ -18,8 +18,7 @@ var Trans =
 		//document.getElementById("TransTable")
 		//.innerHTML = document.getElementById("demo").innerHTML + Trans.Transactions[i].TransDesc + "\n";
 	    var row = table.insertRow(table.getElementsByTagName("tr").length);
-	    row.id = Trans.Transactions[i].TransNo;
-		var TransNum = row.insertCell(0);
+	    var TransNum = row.insertCell(0);	    
 		var TransDesc = row.insertCell(1);
 		var TransLoc = row.insertCell(2);
 		var TransDate = row.insertCell(3);
@@ -31,6 +30,12 @@ var Trans =
 		TransDate.innerHTML = Trans.Transactions[i].TransDate;
 		TransType.innerHTML = Trans.Transactions[i].TransType;
 		TransAmount.innerHTML = Trans.Transactions[i].TransAmount;
+
+		var link = document.createElement('a');
+		link.setAttribute('href', "http://www.google.com/TransNo=" + Trans.Transactions[i].TransNo);
+		link.setAttribute('target', "_blank");
+		TransNum.appendChild(link);
+		row.id = Trans.Transactions[i].TransNo;
 		
 	}
 
