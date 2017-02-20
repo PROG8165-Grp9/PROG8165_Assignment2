@@ -168,13 +168,22 @@ input.table_TransNo
 
 input.table_TransDetails
 {
-	width: 175px;
+	width: 250px;
 }
+
+input.table_TransCurrency
+{
+	width: 213px;
+}
+
 textarea.table_TransDesc
 {
 	width: 250px;
 }
-
+select.table_TransDrop
+{
+	width:250px;
+}
 input.currency {
     text-align: right;
     padding-right: 15px;

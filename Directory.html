@@ -29,14 +29,16 @@
           <table class="table table-responsive table-hover" id="TransTable">
             <thead>
               <tr>
-                <th data-type="number">No.</th>
-                <th data-type="date">Transaction Month</th>
-                <th data-type="string">Type</th>
-                <th data-type="string">Location</th>
+                <th title="No." data-type="number" class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" style="width: 135.2px;" aria-sort="ascending">No.</th>
+                <th title="Description" data-type="date">Description</th>
+                <th title="Transaction Month" data-type="date">Transaction Month</th>
+                <th title="Type" data-type="string">Type</th>
+                <th title="Location" data-type="string">Location</th>
               </tr>
             </thead>
             <tbody>
-				<tr></tr>
+				<tr>
+                </tr>
             </tbody>
           </table>
         </div>
@@ -45,7 +47,13 @@
         </div>
     </form>
     <script src="Add_Transactions.js"></script>
-    <script src="Dir_JS.js"></script>
+    <script src="jquery-1.12.4.js"></script>
+    <script src="jquery.dataTables.min.js"></script>
+    <script src="dataTables.bootstrap.min.js"></script>
+	<script src="Dir_JS.js"></script>
     <script src="HeaderScript.js"></script>
+	<script type="text/javascript">
+//		$('#TransTable').DataTable();
+    </script>
 </body>
 </html>
