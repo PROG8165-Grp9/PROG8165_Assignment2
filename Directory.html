@@ -25,6 +25,23 @@
         </div>
         <hr>
         <div class="container">
+        <div id="sort">
+        sort by 
+          <select id="dateselect)">
+            <option value="threemonth" data-flag="3">Last three months</option>
+            <option value="sixmonth" data-flag="6">Last six months</option>
+            <option value="year" data-flag="12">Last year</option>
+          </select>
+           <select id="typeselect">
+            <option value="deposit" data-flag="0">Deposit</option>
+            <option value="withdrawal" data-flag="1">Withdrawal</option>
+          </select>
+          <select id="locationselect">
+            <option value="Toronto)">Toronto</option>
+            <option value="Kitchener">Kitchener</option>
+            <option value="Waterloo">Waterloo</option>
+          </select>          
+        </div>
           <h3>Recent Transactions</h3>
           <table class="table table-responsive table-hover" id="TransTable">
             <thead>
@@ -52,8 +69,12 @@
     <script src="dataTables.bootstrap.min.js"></script>
 	<script src="Dir_JS.js"></script>
     <script src="HeaderScript.js"></script>
+<<<<<<< HEAD
 	<script type="text/javascript">
 //		$('#TransTable').DataTable();
     </script>
+=======
+    <script src="sort_JS.js"></script>
+>>>>>>> e612fbd812d9941892e5d54c2a5f96ee06708c8f
 </body>
 </html>

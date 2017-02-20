@@ -10,6 +10,7 @@ var Trans =
         ]
 	};
 
+<<<<<<< HEAD
 var mystring = "[";
 var obj = Trans;
 for (var x in obj.Transactions){
@@ -32,3 +33,18 @@ mystring = mystring + "];";
 //           [ 4, "TD Canada Trust: Pioneer Dr. Branch Deposit", "Kitchener", "12/07/2016", "Deposit", 0.00 ],
 //           [ 5, "Fairview Park Mall ATM Withdrawal", "Waterloo", "10/12/2016", "Withdrawal", 0.00 ]
 //        ];
+=======
+window.onload = function (Trans) {
+        var typeselect = document.getElementById("typeselect");
+        var ops = typeselect.getElementsByTagName("option");
+        var arrOps = Array.prototype.slice.call(ops, 0);
+        arrOps.sort(function (a, b) {
+            return a.attributes["data-flag"].value - b.attributes["data-flag"].value;
+        });
+        typeselect.options.length = 0;
+        arrOps.map(function (op) {
+            typeselect.appendChild(op);
+        });
+    } 
+    
+>>>>>>> e612fbd812d9941892e5d54c2a5f96ee06708c8f
