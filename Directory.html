@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<link href="StyleSheet.css" rel="stylesheet" />
@@ -24,6 +24,12 @@
         <hr>
         <div class="container">
           <h3>Recent Transactions</h3>
+            <label>Sort by</label>
+            <select>
+                <option value = "Date" onclick="sortDate()">Date</option>
+                <option value = "Type" onclick="sortType()">Type</option>
+                <option value = "Location" onclick="sortLocation()">Location</option>
+            </select>
           <table class="table table-responsive table-hover" id="TransTable">
             <thead>
               <tr>
@@ -50,5 +56,6 @@
     <script src="dataTables.bootstrap.min.js"></script>
 	<script src="Dir_JS.js"></script>
     <script src="HeaderScript.js"></script>
+    <script src="sort_JS.js"></script>
 </body>
 </html>

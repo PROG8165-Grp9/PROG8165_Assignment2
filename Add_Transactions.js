@@ -1,4 +1,4 @@
-﻿
+
 var Trans =
     {
         "Transactions": [
@@ -23,7 +23,45 @@ for (var x in obj.Transactions){
 }
 mystring = mystring + "];";
 
+function json2array(json){ 
+var result = []; 
+var keys = Object.keys(json); 
+keys.forEach(function(key){ 
+result.push(json[key]); 
+}); 
+return result; 
+} 
 
+var arr = json2array(Trans); 
+
+function sortDate() {
+    arr["0"].sort(function(a, b){ 
+    var x = a.TransLocation.toLowerCase(); 
+    var y = b.TransLocation.toLowerCase(); 
+    if (x < y) {return -1;} 
+    if (x > y) {return 1;} 
+    return 0; 
+    });
+}
+
+function sortType() {
+    arr["0"].sort(function(a, b){ 
+    var x = a.TransDate.toLowerCase(); 
+    var y = b.TransDate.toLowerCase(); 
+    if (x < y) {return -1;} 
+    if (x > y) {return 1;} 
+    return 0; 
+    });
+}
+function sortLocation() {
+    arr["0"].sort(function(a, b){ 
+    var x = a.TransLocation.toLowerCase(); 
+    var y = b.TransLocation.toLowerCase(); 
+    if (x < y) {return -1;} 
+    if (x > y) {return 1;} 
+    return 0; 
+    });
+}
 //var Transac =
 //    [
 //           [ 1, "TD Canada Trust: Initial Deposit", "Toronto",  "12/01/2016", "Deposit", 0.00 ],
