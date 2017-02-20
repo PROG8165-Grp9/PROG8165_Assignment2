@@ -1,4 +1,4 @@
-﻿var monthNames = ["January", "February", "March", "April", "May", "June",
+var monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"];
 
 /**$(document).ready(function() {
@@ -31,7 +31,7 @@ var table = document.getElementById("TransTable");
 		TransLoc.innerHTML = Trans.Transactions[i].TransLocation;
 		var parts = (Trans.Transactions[i].TransDate).split('/');
         var mydate = new Date(parts[2], parts[1] - 1, parts[0]);
-		TransDate.innerHTML = monthNames[mydate.getMonth()] +" " + parts[0] + ", " + parts[2];
+		TransDate.innerHTML = Trans.Transactions[i].TransDate;
 		TransType.innerHTML = Trans.Transactions[i].TransType;
 
 		row.id = Trans.Transactions[i].TransNo;

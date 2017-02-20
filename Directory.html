@@ -25,10 +25,10 @@
         <div class="container">
           <h3>Recent Transactions</h3>
             <label>Sort by</label>
-            <select>
-                <option value = "Date" onclick="sortDate()">Date</option>
-                <option value = "Type" onclick="sortType()">Type</option>
-                <option value = "Location" onclick="sortLocation()">Location</option>
+            <select id = "sort">
+                <option value="Date" onclick="sort()" id="dateOption">Date</option>
+                <option value="Type" onclick="sort()" id="typeOption">Type</option>
+                <option value="Location" onclick="sort()" id="locationOption">Location</option>
             </select>
           <table class="table table-responsive table-hover" id="TransTable">
             <thead>
