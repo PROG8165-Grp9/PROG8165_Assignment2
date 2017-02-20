@@ -14,7 +14,7 @@
             </section>
 			<aside style="display:table-cell; float:right; ">
             	<button type="button" class="btn btn-default-header" onClick="LoadDash()">Dashboard</button>
-                <button type="button" class="btn btn-default-header">New Transaction</button>
+                <button type="button" class="btn btn-default-header" onClick="CreateTrans()">New Transaction</button>
                 <button type="button" class="btn btn-default-header" onClick="LogOut()">Log Out</button>
             </aside>
         </div>
@@ -26,29 +26,29 @@
     	<tr>
         	<td class="table_Lbl"><label>Transaction Number:</label></td>
             <td >
-            	<input id="tbxTrans" name="tbxTransNo" class="table_TransNo" type="text" disabled>
+            	<input id="tbxTrans" name="tbxTransNo" class="form-control" type="text" disabled>
             </td>
         </tr>
         <tr>
             <td class="table_Lbl"><label>Date (Month):</label></td>
-            <td><input id="tbxDate" type="text" class="table_TransDetails" disabled></td>
+            <td><input id="tbxDate" type="text" class="form-control" disabled></td>
         </tr>
         <tr>
         	<td class="table_Lbl"><label>Description:</label></td>
             <td><textarea id="txtaDesc" style="height:50px"
-            type="text" class="table_TransDesc" disabled></textarea></td>
+            type="text" class="form-control" disabled></textarea></td>
         </tr>
         <tr>
         	<td class="table_Lbl"><label>Type:</label></td>
-            <td><input id="tbxType" class="table_TransDetails" type="text" disabled></td>
+            <td><input id="tbxType" class="form-control" type="text" disabled></td>
         </tr>
         <tr>
         	<td class="table_Lbl"><label>Location:</label></td>
-            <td><input id="tbxLoc" class="table_TransDetails" type="text" disabled></td>
+            <td><input id="tbxLoc" class="form-control" type="text" disabled></td>
         </tr>
         <tr>
 	        <td class="table_Lbl"><label>Amount:</label></td>
-            <td><input id="tbxAmount" class="table_TransDetails" type="number" disabled></td>
+            <td><input id="tbxAmount" class="form-control" type="number" disabled></td>
         </tr>
         <tr>
         	<td>&nbsp;</td>
