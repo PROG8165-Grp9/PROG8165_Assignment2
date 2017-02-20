@@ -10,4 +10,16 @@ var Trans =
         ]
     };
 
+window.onload = function (Trans) {
+        var typeselect = document.getElementById("typeselect");
+        var ops = typeselect.getElementsByTagName("option");
+        var arrOps = Array.prototype.slice.call(ops, 0);
+        arrOps.sort(function (a, b) {
+            return a.attributes["data-flag"].value - b.attributes["data-flag"].value;
+        });
+        typeselect.options.length = 0;
+        arrOps.map(function (op) {
+            typeselect.appendChild(op);
+        });
+    } 
     
