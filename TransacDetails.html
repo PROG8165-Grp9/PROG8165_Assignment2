@@ -9,10 +9,11 @@
 <body>
   <form action="" method="get" name="Transaction" target="_self">
   <div id="dash_header" class="container">
-        	<section style="display:table-cell;">
-            	<h1 style="font: mono; font-family: 'Monotype Corsiva'; font-size: 50px;">MyTrans</h1>
+        	<section class="headerStyle">
+            	<h1 class="logoStyle">MyTrans</h1>
             </section>
-			<aside style="display:table-cell; float:right; ">
+            </section>
+			<aside class="asideStyle">
             	<button type="button" class="btn btn-default-header" onClick="LoadDash()">Dashboard</button>
                 <button type="button" class="btn btn-default-header" onClick="CreateTrans()">New Transaction</button>
                 <button type="button" class="btn btn-default-header" onClick="LogOut()">Log Out</button>
@@ -35,7 +36,7 @@
         </tr>
         <tr>
         	<td class="table_Lbl"><label>Description:</label></td>
-            <td><textarea id="txtaDesc" style="height:50px"
+            <td><textarea id="txtaDesc"
             type="text" class="form-control" disabled></textarea></td>
         </tr>
         <tr>

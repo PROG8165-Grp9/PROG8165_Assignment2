@@ -206,5 +206,18 @@ input.currency {
     border-radius: 4px;
 }
 
->>>>>>> origin/develop
->>>>>>> 1fe6537d1a96231e8a0f5cf0ae4e125fcedb2cd1
+h1.logoStyle
+{
+	font: mono; font-family: 'Monotype Corsiva'; font-size: 50px;
+}
+
+section.headerStyle
+{
+	display:table-cell;
+}
+
+aside.asideStyle
+{
+	display:table-cell; 
+	float:right;
+}

@@ -1,9 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <!--<link href="StyleSheet.css" rel="stylesheet" />
-        Change the href of this
-        --> 
+	<link href="StyleSheet.css" rel="stylesheet" />
     <title></title>
 	<meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,10 +12,10 @@
 <body>
     <form target="_self">
         <div id="dash_header" class="container">
-        	<section style="display:table-cell;">
-            	<h1 style="font: mono; font-family: 'Monotype Corsiva'; font-size: 50px;">MyTrans</h1>
+        	<section class="headerStyle">
+            	<h1 class="logoStyle">MyTrans</h1>
             </section>
-			<aside style="display:table-cell; float:right; ">
+			<aside class="asideStyle">
             	<button type="button" class="btn btn-default-header" onClick="LoadDash()">Dashboard</button>
                 <button type="button" class="btn btn-default-header" onClick="CreateTrans()">New Transaction</button>
                 <button type="button" class="btn btn-default-header" onClick="LogOut()">Log Out</button>
@@ -29,7 +27,7 @@
           <table class="table table-responsive table-hover" id="TransTable">
             <thead>
               <tr>
-                <th title="No." data-type="number" class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" style="width: 135.2px;" aria-sort="ascending">No.</th>
+                <th title="No." data-type="number">No.</th>
                 <th title="Description" data-type="date">Description</th>
                 <th title="Transaction Month" data-type="date">Transaction Month</th>
                 <th title="Type" data-type="string">Type</th>
