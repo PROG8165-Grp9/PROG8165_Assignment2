@@ -26,10 +26,12 @@
           <h3>Recent Transactions</h3>
             <label>Sort by</label>
             <select id = "sort">
-                <option value="Date" onchange="sort()" id="dateOption">Date</option>
-                <option value="Type" onchange="sort()" id="typeOption">Type</option>
-                <option value="Location" onchang="sort()" id="locationOption">Location</option>
+                <option value="Date" onClick="sortDate()" id="dateOption">Date</option>
+                <option value="Type" onClick="sortType()" id="typeOption">Type</option>
+                <option value="Location" onClick="sortLocation()" id="locationOption">Location</option>
+                
             </select>
+            <button type="button" onClick="sortTable()" class="btn btn-default-header">Refresh</button>
           <table class="table table-responsive table-hover" id="TransTable">
             <thead>
               <tr>
@@ -56,6 +58,6 @@
     <script src="dataTables.bootstrap.min.js"></script>
 	<script src="Dir_JS.js"></script>
     <script src="HeaderScript.js"></script>
-    
+    <script src="sort_JS.js"></script>
 </body>
 </html>
