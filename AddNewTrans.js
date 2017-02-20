@@ -7,3 +7,7 @@ function onValueChanged()
 {
 	tbxNAmount.Text = tbxNAmount.value.ToString("#0.00");
 }
+
+function goBack() {
+    window.history.back();
+}
