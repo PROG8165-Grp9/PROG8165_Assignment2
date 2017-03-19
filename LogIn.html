@@ -16,8 +16,11 @@
 			<div id="login_form">
 				<h1>Login</h1>
 				
-                <form action="Directory.html" method="get" target="_self" id="logIn">
-                    
+                <!--<form action="Directory.html" method="get" target="_self" id="logIn">-->
+                <form autocomplete="off"
+				 method="get" action="Directory.html" onSubmit="return validate(this);" name="form" target="_self" id="logIn">
+				<p id="demo"></p>
+				
 				<div id="form_login_group">
 				<input type="text" class="login-field"  name = "username" placeholder="username" id="login_name">
 				</div>
