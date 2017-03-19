@@ -1,4 +1,12 @@
-﻿document.getElementById("tbxNTrans").value = Trans.Transactions.length + 1;
+﻿if(typeof Trans !== 'undefined' && Trans !== null)
+	{
+		document.getElementById("tbxNTrans").value = Trans.Transactions.length + 1;
+	}
+	else
+	{
+		var Trans ={"Transactions": []};
+		document.getElementById("tbxNTrans").value = Trans.Transactions.length + 1;
+	}
 
 function AddTrans() {
 }

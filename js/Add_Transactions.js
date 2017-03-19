@@ -1,4 +1,3 @@
-
 var Trans =
     {
         "Transactions": [
@@ -10,6 +9,7 @@ var Trans =
         ]
 	};
 
+
 function json2array(json){ 
 var result = []; 
 var keys = Object.keys(json); 
@@ -19,7 +19,16 @@ result.push(json[key]);
 return result; 
 } 
 
-var arr = json2array(Trans);
+if(typeof Trans !== 'undefined' && Trans !== null)
+	{
+		var arr = json2array(Trans);
+	}
+else
+	{
+		var Trans ={"Transactions": []};
+		var arr = json2array(Trans);
+	}
+
 
 
 
