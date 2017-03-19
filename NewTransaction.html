@@ -37,7 +37,8 @@
                     <td class="table_Lbl"><label>Description:</label></td>
                     <td>
                         <textarea id="txtaNDesc"
-                                  type="text" class=" form-control"></textarea>
+                                  type="text" class=" form-control"
+                                  minlength="10"></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -57,7 +58,11 @@
                     <td class="table_Lbl"><label>Amount:</label></td>
                     <td>
                     <span class="input-group-addon-1">$</span>
-                    <input id="tbxNAmount" class="table_TransDetails form-control currency" min="0" step="0.01" type="number" data-number-to-fixed="2" ></td>
+                    <input id="tbxNAmount" 
+                    class="table_TransDetails form-control currency" 
+                    min="-10000" step="0.10" type="number"
+                    pattern="[0-9]*"
+                     data-number-to-fixed="2" max="10000" ></td>
                 </tr>
                 <tr>
                 	<td>&nbsp;</td>

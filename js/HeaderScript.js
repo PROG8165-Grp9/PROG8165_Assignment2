@@ -34,3 +34,10 @@ function SelectionChange()
 	{
 	}
 }
+
+document.getElementById("tbxNAmount").onblur =function (){    
+    this.value = parseFloat(this.value.replace(/,/g, ""))
+                    .toFixed(2)
+                    .toString()
+                    .replace(/\B(?=(\d{5})+(?!\d))/g, ",");    
+}
