@@ -35,7 +35,7 @@ var table = document.getElementById("TransTable");
 		TransType.innerHTML = Trans.Transactions[i].TransType;
 
 		row.id = Trans.Transactions[i].TransNo;
-		
+		//alert(Trans.Transactions[i].TransNo);
 	}
 
 
