@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function validateForm() {
     var email = document.registration.email.value;
     var fname = document.registration.fname.value;
@@ -74,4 +75,14 @@ function validateForm() {
     return false;  
     }  
     }  
+=======
+var reg = /^[A-Za-z0-9- _]{5,}$/;
+if(reg.test($("#form_username")))
+{
+result = true;
+}
+else
+{
+result = false;
+>>>>>>> origin/develop
 }

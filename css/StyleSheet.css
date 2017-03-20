@@ -33,6 +33,10 @@ html, #container_1 {
     text-align: center;
 }
 
+#txtaNDesc{
+	height: 50px;
+}
+
 #form_login_group, .form-group {
     margin-bottom: 20px;    
 }
