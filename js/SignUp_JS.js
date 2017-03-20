@@ -1,6 +1,6 @@
 var chk_email = /.+\@.+\..+/; //Contains an @ character, as well as it should end with an en extension of 2 or more characters. 
 var chk_name = /^[A-Z][\w  ]{1,50}$/;   // The names must start with a capital characters whilst the rest must be lower case, A-z, 0-9, space
-var chk_username = /^[\w -]{5,20}$/; //Minimum 5 characters, A-z, 0-9, _- and space
+var chk_username = /^[\w _-]{5,20}$/; //Minimum 5 characters, A-z, 0-9, _- and space
 var chk_password = /^^[A-Za-z0-9_]{4,}$/; //Password field must be at least 4 characters long 
 var emailLable = document.getElementById("emailLable");
 var fnameLable = document.getElementById("fnameLable");
