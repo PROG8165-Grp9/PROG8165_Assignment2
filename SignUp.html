@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <link href="css/StyleSheet.css" rel="stylesheet" />
-    <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
-    <script type="text/javascript" src="js/SignUp_JS.js"></script> 
+    <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">     
     <title>Sign Up page</title>
     
 	<meta charset="utf-8" />
@@ -17,13 +16,13 @@
             <h1 class="text-center">Sign up page</h1>                    
             
                 
-                <form action="LogIn.html" name="registration" method="get" target="_self" id="signUp_form" onsubmit="return(validateForm());">
+                <form action="LogIn.html" name="registration" method="get" target="_self" id="signUp_form" onsubmit="return (validateForm(this));">
                     
                     <div class="form-group">
                         
                         <label for="formEmail">Enter your email:</label>
-                        <input type="email" name ="email" class="form-control login-field" id="form_email" placeholder="Email" required>
-                        <label for="formEmail" name="emailLable" class="text-center"></label>
+                        <input type="text" name ="email" class="form-control login-field" id="form_email" placeholder="Email" required>
+                        <label id="emailLable"></label>
                         
                     </div>
                     
@@ -31,7 +30,7 @@
                         
                         <label for="formFName">First name:</label>
                         <input type="text" name ="fname" class="form-control" id="form_username" placeholder="First name" required>
-                        <label for="formFName" name="fnameLable"></label>
+                        <label id="fnameLable"></label>
                         
                     </div>
                     
@@ -39,7 +38,7 @@
                         
                         <label for="formLName">Last name:</label>
                         <input type="text" name ="lname" class="form-control" id="form_username" placeholder="Last name" required>
-                        <label for="formLName" name="lnameLable"></label>
+                        <label id="lnameLable"></label>
                         
                     </div>
                     
@@ -47,7 +46,7 @@
                         
                         <label for="formUsername">Enter your username:</label>
                         <input type="text" name ="username" class="form-control" id="form_username" placeholder="Username" required>
-                        <label for="formUsername" name="usernameLable"></label>
+                        <label id="usernameLable"></label>
                         
                     </div>
                     
@@ -55,7 +54,7 @@
                         
                         <label for="formPassword">Enter your password:</label>                        
                         <input type="password" name ="password" class="form-control" id="form_password" placeholder="Password" required>
-                        <label for="formPassword" name="passwordLable"></label>
+                        <label id="passwordLable"></label>
                         
                     </div>   
                     
@@ -80,13 +79,8 @@
         </div><!--End of sign_Up container-->  
         </div><!--End of container-->  
         <div id="footer">
-<<<<<<< HEAD
         </div><!--End of footer-->   
-</body>   
-=======
-        </div><!--End of footer-->
-    
-</body>
-<script type="text/javascript" src="js/SignUp_JS.js"></script>    -->
->>>>>>> origin/develop
+     
+<script type="text/javascript" src="js/SignUp_JS.js"></script>    
+</body> 
 </html>
