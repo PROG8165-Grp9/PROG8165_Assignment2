@@ -16,6 +16,20 @@ function goBack() {
     window.history.back();
 }
 
+document.getElementById("txtaDesc").onblur =function (){ 
+	var des = this.value;
+	var reg = /^[A-Za-z0-9- _]{10,}$/;
+    if(reg.test(des) && des.length >= 10)
+	{
+		document.getElementById("descrlabel").style.display = "none";
+	}
+	else
+	{
+		document.getElementById("descrlabel").style.display = "block";
+	}
+}
+
+
 document.getElementById("tbxNAmount").onblur =function (){ 
 	var amnt = this.value;
     if(amnt.replace(/,/g, "") <= 10000 && amnt.replace(/,/g, "") >= -10000)
