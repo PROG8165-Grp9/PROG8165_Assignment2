@@ -49,7 +49,7 @@ document.getElementById("tbxNAmount").onblur =function (){
 	
 }
 function validateTransForm(form) {
-	var TransDesc = document.getElementById("tbxNAmount").value;
+	var TransDesc = document.getElementById("txtaDesc").value;
 	var TransAmt = document.getElementById("tbxNAmount");
 	
 	var reg = /^[A-Za-z0-9 _-]{10,}$/;
@@ -72,5 +72,5 @@ function validateTransForm(form) {
     else {
        document.getElementById("lblAmntErr").style.display = "block";
     }
-	
+	return true;
 }
