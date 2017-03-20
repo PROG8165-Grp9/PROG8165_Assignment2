@@ -1,5 +1,5 @@
  var CheckUsername = /^[A-Za-z0-9_-]{5,}$/;
- var CheckPassword =  /^[A-Za-z0-9!@#$%^&*()_]{4,}$/;
+ var CheckPassword = /^[A-Za-z0-9_]{4,}$/; 
  var usernameLable = document.getElementById("usernameLable");
  var passwordLable = document.getElementById("passwordLable");
 
