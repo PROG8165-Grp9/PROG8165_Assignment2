@@ -20,14 +20,15 @@ function goBack() {
 document.getElementById("txtaDesc").onblur =function (){ 
 	var des = this.value;
 	var reg = /^[A-Za-z0-9 _-]{10,}$/;
-    if(reg.test(des))
-	{
-		document.getElementById("descrlabel").style.display = "none";
-	}
-	else
+    if(!reg.test(des))
 	{
 		descrlabel.innerHTML = "Description must be at least 10 characters!";
 		document.getElementById("descrlabel").style.display = "block";
+	}
+	else
+	{
+		descrlabel.innerHTML = "";
+		document.getElementById("descrlabel").style.display = "none";
 	}
 }
 
@@ -52,20 +53,19 @@ function validateTransForm(form) {
 	var TransAmt = document.getElementById("tbxNAmount");
 	
 	var reg = /^[A-Za-z0-9 _-]{10,}$/;
-    if(reg.test(TransDesc))
+    if(!reg.test(TransDesc))
 	{
-		document.getElementById("descrlabel").style.display = "none";
+		descrlabel.innerHTML = "Description must be at least 10 characters!";
+		document.getElementById("descrlabel").style.display = "block";
 		return false;
 	}
 	else
 	{
-		descrlabel.innerHTML = "Description must be at least 10 characters!";
-		document.getElementById("descrlabel").style.display = "block";
+		document.getElementById("descrlabel").style.display = "none";
 	}
 	
 	if(TransAmt.value.replace(/,/g, "") <= 10000 && TransAmt.value.replace(/,/g, "") >= -10000)
 	{
-		alert(TransAmt.value);
        document.getElementById("lblAmntErr").style.display = "none"; 
        return false;        
     }
