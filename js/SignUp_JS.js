@@ -1,5 +1,5 @@
 var chk_email = /.+\@.+\..+/; //Contains an @ character, as well as it should end with an en extension of 2 or more characters. 
-var chk_name = /^[A-Z][a-z0-9  ]{1,50}$/;   // The names must start with a capital characters whilst the rest must be lower case, A-z, 0-9, space
+var chk_name = /^[A-Z][\w  ]{1,50}$/;   // The names must start with a capital characters whilst the rest must be lower case, A-z, 0-9, space
 var chk_username = /^[\w -]{5,20}$/; //Minimum 5 characters, A-z, 0-9, _- and space
 var emailLable = document.getElementById("emailLable");
 var fnameLable = document.getElementById("fnameLable");
@@ -13,7 +13,7 @@ function validateForm(form) {
     var username = registration.username.value;
     
     if(!chk_email.test(email)) {
-       emailLable.innerHTML = "Email should contain an @ character as well as an extension of 2 or more characters";     
+       emailLable.innerHTML = "Correct format : example@domain.com";     
        return false;        
     }
     else {
