@@ -1,32 +1,28 @@
- var CheckUsername = /^[A-Za-z0-9_]{5,}$/;
- var CheckPassword =  /^^[A-Za-z0-9_]{4,}$/;
+ var CheckUsername = /^[A-Za-z0-9_-]{5,}$/;
+ var CheckPassword =  /^[A-Za-z0-9!@#$%^&*()_]{4,}$/;
+ var usernameLable = document.getElementById("usernameLable");
+ var passwordLable = document.getElementById("passwordLable");
 
 function validate(form){
 
- var username = form.username.value;
- var password = form.password.value;
- var errors = [];
+  var username = form.username.value;
+  var password = form.password.value;
  
- if (!CheckUsername.test(username)) {
-  errors[errors.length] = "- Username must be at least 5 characters long.";
- }
-
- if (!CheckPassword.test(password)) {
-  errors[errors.length] = "- Password must be at least 4 characters long.";
- }
+ if(!CheckUsername.test(username)) {
+        usernameLable.innerHTML = "Username should contain at least 5 characters."; 
+        return false;
+    }
+    else {
+        usernameLable.innerHTML = ""; 
+    }    
  
- if (errors.length > 0) {
-  result(errors);
-  return false;
- }
+ if(!CheckPassword.test(password)) {
+        passwordLable.innerHTML = "Password should contain at least 4 characters."; 
+        return false;
+    }
+    else {
+        passwordLable.innerHTML = ""; 
+    }    
+    return true;
  
- return true;
-}
-
-function result(errors){
- var msg = "Invalid Data! ";
- for (var i = 0; i<errors.length; i++) {
-  msg += "<br />" + errors[i];
  }
- document.getElementById("demo").innerHTML = msg;
-}
