@@ -9,7 +9,6 @@ var Trans =
         ]
 	};
 
-
 function json2array(json){ 
 var result = []; 
 var keys = Object.keys(json); 

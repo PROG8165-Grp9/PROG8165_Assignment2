@@ -36,7 +36,7 @@
                 <tr>
                     <td class="table_Lbl"><label>Description:</label></td>
                     <td>
-                        <input id="txtaNDesc"
+                        <input id="txtaDesc"
                         	pattern="(\d)([a-z])([A-Z])"
                             type="text" class=" form-control"
                             minlength="10">
@@ -62,8 +62,11 @@
                     <input id="tbxNAmount" 
                     class="table_TransDetails form-control currency" 
                     min="-10000" step="0.10" type="number"
-                    pattern="[0-9]*"
-                     data-number-to-fixed="2" max="10000" ></td>
+                    pattern="^\\?(([1-9](\\d*|\\d{0,2}(,\\d{3})*))|0)(\\.\\d{1,2})?"
+                     data-number-to-fixed="2" max="10000" >
+                     <label id="lblAmntErr">Amount can only be between CAD 10,000.00 to -10,000.00</label>
+                     
+                     </td>
                 </tr>
                 <tr>
                 	<td>&nbsp;</td>

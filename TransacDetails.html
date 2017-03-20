@@ -51,7 +51,10 @@
 	        <td class="table_Lbl"><label>Amount:</label></td>
             <td>
             	<span class="input-group-addon-1">$</span>
-                <input id="tbxAmount" class="table_TransCurrency form-control currency" min="0" step="0.01" type="number" data-number-to-fixed="2" disabled></td>
+                <input id="tbxAmount" class="table_TransDetails form-control currency"
+                    min="-10000" step="0.10" type="number"
+                    pattern="[0-9]*"
+                     data-number-to-fixed="2" max="10000"disabled></td>
         </tr>
         <tr>
         	<td>&nbsp;</td>
