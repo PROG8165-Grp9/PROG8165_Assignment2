@@ -19,12 +19,13 @@ function goBack() {
 document.getElementById("txtaDesc").onblur =function (){ 
 	var des = this.value;
 	var reg = /^[A-Za-z0-9- _]{10,}$/;
-    if(reg.test(des) && des.length >= 10)
+    if(reg.test(des))
 	{
 		document.getElementById("descrlabel").style.display = "none";
 	}
 	else
 	{
+		descrlabel.innerHTML = "Description must be at least 10 characters!";
 		document.getElementById("descrlabel").style.display = "block";
 	}
 }
