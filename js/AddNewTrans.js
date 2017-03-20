@@ -26,6 +26,7 @@ document.getElementById("txtaDesc").onblur =function (){
 	}
 	else
 	{
+		descrlabel.innerHTML = "Description must be at least 10 characters!";
 		document.getElementById("descrlabel").style.display = "block";
 	}
 }
