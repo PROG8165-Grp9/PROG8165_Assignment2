@@ -20,12 +20,3 @@ function goBack() {
     window.history.back();
 }
 
-var reg = /^[A-Za-z0-9- _]{10,}$/;
-if(reg.test($("#txtaDesc")))
-{
-result = true;
-}
-else
-{
-result = false;
-}

@@ -7,7 +7,7 @@
     <title></title>
 </head>
 <body>
-    <form action="" method="get" name="Transaction" target="_self">
+    
         <div id="dash_header" class="container">
             <section class="headerStyle">
             	<h1 class="logoStyle">MyTrans</h1>
@@ -19,6 +19,7 @@
             </aside>
         </div>
         <hr>
+        <form action="" method="get" name="Transaction" target="_self"onsubmit="return(validateTransForm(this));">
         <div class="container">
             <div id="title">Trasaction Details</div>
             <br>
@@ -72,7 +73,7 @@
                 <tr>
                 	<td>&nbsp;</td>
                     <td align="left">
-                        <button type="button" class="btn btn-default" onClick="AddTrans()">Add Transaction</button>
+                        <button type="submit" class="btn btn-default">Add Transaction</button>
                         &nbsp;
                         <button type="button" class="btn btn-default" onClick="goBack()">Back</button>
                     </td>
@@ -80,7 +81,6 @@
             </table>
         </div>
     </form>
-    <script src="js/Add_Transactions.js"></script>
     <script src="js/HeaderScript.js"></script>
     <script src="js/AddNewTrans.js"></script>
 </body>
